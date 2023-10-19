@@ -22,8 +22,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='p-16 flex flex-col h-full'>
-        <div className='flex gap-4 overflow-auto whitespace-nowrap snap-mandatory no-scrollbar'>
+      <div className='px-16 py-12 flex flex-col h-full rounded-full'>
+        <div className='flex gap-4 pb-4 overflow-auto whitespace-nowrap snap-mandatory no-scrollbar'>
           {[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5].map(() => {
             return (
             <div className="flex flex-col justify-center items-center snap-start">
@@ -34,8 +34,12 @@ function App() {
           })}
         </div>
         <div className='grid'>
-          <div>
-
+          <div className='w-[275px] h-[360px]'>
+            <img src="bhouse.jpg" alt="" className='h-[260px] object-cover rounded-lg'/>
+            <div className='flex items-center justify-between'>
+              <h2 className='font-medium'>Jukcatts Boarding House</h2>
+              <p className='flex items-center'><span className="material-symbols-rounded text-lg">star</span>5.00</p>
+            </div>
           </div>
         </div>
       </div>
