@@ -1,10 +1,6 @@
-import { useState } from 'react'
-import './App.css'
-
-function App() {
-
+export default function Home() {
   return (
-    <>
+    <main>
       <div className='px-12 flex justify-start items-center w-full h-[75px] shadow-sm'>
         <div className='flex items-center justify-start w-full gap-2'>
           <img src="logo.png" className='h-16'></img>
@@ -33,7 +29,9 @@ function App() {
             )
           })}
         </div>
-        <div className='grid'>
+        <div className=''>
+          {[1,2,3].map(() => {
+            return (
           <div className='w-[275px] h-[360px]'>
             <img src="bhouse.jpg" alt="" className='h-[260px] object-cover rounded-lg'/>
             <div className='flex items-center justify-between'>
@@ -41,10 +39,11 @@ function App() {
               <p className='flex items-center'><span className="material-symbols-rounded text-lg">star</span>5.00</p>
             </div>
           </div>
-        </div>
+              
+            )
+          })}
       </div>
-    </>
+    </div>
+   </main>
   )
 }
-
-export default App
