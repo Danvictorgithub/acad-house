@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <div className='px-12 flex justify-start items-center w-full h-[75px] shadow-sm'>
+    <main className="">
+      <header className='px-12 flex justify-start items-center w-full h-[75px] shadow-sm'>
         <div className='flex items-center justify-start w-full gap-2'>
           <img src="logo.png" className='h-16'></img>
           <h1 className='text-2xl font-bold text-blue-700'>acadhouse</h1>
@@ -17,7 +17,7 @@ export default function Home() {
             <span className="material-symbols-outlined text-4xl text-zinc-700">account_circle</span>
           </div>
         </div>
-      </div>
+      </header>
       <div className='px-16 py-12 flex flex-col h-full rounded-full'>
         <div className='flex gap-4 pb-4 overflow-auto whitespace-nowrap snap-mandatory no-scrollbar'>
           {[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5].map(() => {
