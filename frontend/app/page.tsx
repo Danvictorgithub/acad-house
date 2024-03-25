@@ -1,35 +1,11 @@
 import { randomUUID } from "crypto";
+import Header from "./components/Header";
 export default function Home() {
   return (
     <main className="">
-      <header className="shadow-sm">
-        <div className="container mx-auto px-12 flex justify-start items-center w-full h-[75px] ">
-          <div className="flex items-center justify-start w-full gap-2">
-            <img src="logo.png" className="h-16"></img>
-            <h1 className="text-2xl font-bold text-blue-700">acadhouse</h1>
-          </div>
-          <div className="w-full flex items-center border-2 rounded-full overflow-hidden p-2">
-            <span className="material-symbols-outlined">more_vert</span>
-            <input
-              type="text"
-              className="w-full"
-              placeholder="Enter Location"
-            />
-            <span className="material-symbols-outlined bg-blue-700 text-white p-[5px] rounded-full">
-              search
-            </span>
-          </div>
-          <div className="w-full flex justify-end">
-            <div className="flex items-center justify-center gap-2 border-2 px-4 py-1 rounded-full">
-              <p className="text-xl font-medium text-zinc-700">login</p>
-              <span className="material-symbols-outlined text-4xl text-zinc-700">
-                account_circle
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div className="container mx-auto px-16 py-12 flex flex-col h-full rounded-full">
+      <Header />
+
+      <div className=" container mx-auto px-16 py-12 flex flex-col h-full rounded-full">
         <div className="flex gap-4 pb-4 overflow-auto whitespace-nowrap snap-mandatory no-scrollbar">
           {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map(
             () => {
@@ -47,7 +23,7 @@ export default function Home() {
             }
           )}
         </div>
-        <div className="grid grid-cols-auto-fit gap-8">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
           {[1, 2, 3, 1, 1, 1, 1, 1, 1, 1].map(() => {
             return (
               <div className="w-[275px] h-[360px]" key={randomUUID()}>
@@ -59,11 +35,7 @@ export default function Home() {
                 <div className="flex items-center justify-between py-2">
                   <h2 className="font-medium">Jukcatts Boarding House</h2>
                   <p className="flex items-center">
-                    <div className="bg-black rounded-full w-5 h-5 flex justify-center items-center">
-                      <span className="material-symbols-rounded text-lg text-white pb-[2px]">
-                        star
-                      </span>
-                    </div>
+                    <span className="material-symbols-outlined">star</span>
                     <span className="ml-1">5.00</span>
                   </p>
                 </div>
